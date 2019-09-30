@@ -12,3 +12,10 @@ build/
 bin/
 *.iml
 *.log
+*/*.debhelper
+*/*.debhelper.log
+*.buildinfo
+*.substvars
+debian/files
+debian/ala-cas-5
+debian/debhelper-build-stamp

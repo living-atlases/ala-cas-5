@@ -1,6 +1,7 @@
 # https://www.debian.org/doc/manuals/maint-guide/dother.en.html#install
 target/cas.jar opt/atlas/cas
 debian/cas.conf opt/atlas/cas
+debian/genPass.sh opt/atlas/cas
 debian/data/cas/config/application.template data/cas/config
 debian/data/cas/config/log4j2.xml data/cas/config
 

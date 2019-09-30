@@ -44,23 +44,14 @@ in this way you can also test it in different releases.
 
 Read `/usr/share/doc/piuparts/README.*` for more usage samples.
 
-## No interactive install
+## TODO
 
-You can preseed this package with something similar to (if this package uses mysql):
+[ ] remove mysql deps and dbconfig to allow external dbs
+[ ] ask for db user/pass and put in application.yml
 
-```bash
-echo "ala-cas-5 ala-cas-5/mysql/admin-pass password $DB_ROOT_PWD" | debconf-set-selections && \
-echo "ala-cas-5 ala-cas-5/dbconfig-install boolean true" | debconf-set-selections && \
-echo "ala-cas-5 ala-cas-5/dbconfig-upgrade boolean true" | debconf-set-selections
+## CODE DUPLICATED
 
-cat > /etc/dbconfig-common/ala-cas-5.conf <<EOF
-dbc_dbname='cas-5'
-dbc_dbuser='cas-5'
-dbc_dbpass='password'
-EOF
+Code duplicated from `ala-install` of similar:
 
-export DEBCONF_FRONTEND=noninteractive
-apt-get install -yq --force-yes ala-cas-5
-```
-
-Also you can install `dbconfig-no-thanks` to avoid db questions.
+- data/cas5/templates/log4j2.xml
+- data/cas5/config/application.template

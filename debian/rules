@@ -21,6 +21,7 @@ override_dh_fixperms:
 	dh_fixperms
 #	If we need to set some special perms to a file
 	chmod 755 debian/ala-cas-5/opt/atlas/cas/cas.jar
+	chmod 755 debian/ala-cas-5/opt/atlas/cas/genPass.sh
 #	Also we use postinstall for this
 
 override_dh_install:
