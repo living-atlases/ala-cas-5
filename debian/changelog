@@ -1,3 +1,9 @@
+ala-cas-5 (5.3.12-2) unstable; urgency=medium
+
+  * Setting dbc_dbuser to cas
+
+ -- Vicente J. Ruiz Jurado <vjrj@ourproject.org>  Tue, 01 Oct 2019 21:37:53 +0200
+
 ala-cas-5 (5.3.12-1) unstable; urgency=low
 
   * Initial release

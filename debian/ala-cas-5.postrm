@@ -10,12 +10,24 @@ if [ -f /usr/share/debconf/confmodule ]; then
     . /usr/share/debconf/confmodule
 fi
 
-#DEBHELPER#
-if [ -f /usr/share/dbconfig-common/dpkg/postrm.mysql ]; then
-    . /usr/share/dbconfig-common/dpkg/postrm.mysql
+if [ -f /usr/share/dbconfig-common/dpkg/frontend.postrm.mysql ]; then
+    . /usr/share/dbconfig-common/dpkg/frontend.postrm.mysql
     dbc_go ala-cas-5 "$@"
 fi
 
+#
+# Purge db templates, config, etc
+#
+# if [ "$1" = "purge" ]; then
+#     rm -f /etc/db-test-mysql-frontend/debian-db.php
+#     if which ucf >/dev/null 2>&1; then
+#         ucf --purge /etc/db-test-mysql-frontend/debian-db.php
+#         ucfr --purge db-test-mysql-frontend /etc/db-test-mysql-frontend/debian-db.php
+#     fi
+# fi
+
+
+#DEBHELPER#
 
 #
 # POSIX-compliant shell function

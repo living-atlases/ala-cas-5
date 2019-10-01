@@ -16,6 +16,7 @@
 . /usr/share/debconf/confmodule
 
 #DEBHELPER#
+
 . /usr/share/dbconfig-common/dpkg/prerm.mysql
 dbc_go ala-cas-5 "$@"
 

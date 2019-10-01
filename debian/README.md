@@ -23,15 +23,13 @@ debian/ala-cas-5
 
 Just create here your systemad service like
 debian/ala-cas-5.service
-debian/ala-cas-5.conf
+debian/cas.conf
 
 see ala-images debian package for details
 
 ## Looking for inspiration?
 
-You can see [tomcat7-examples package source](https://salsa.debian.org/java-team/tomcat7/tree/master/debian) for inspiration of tomcat7 packages and also about how to create multiple debian packages from a same source repository.
-
-Also `dbconfig-common` package have some samples in `/usr/share/doc/dbconfig-common/examples/` for mysql and postgresql debian configuration tasks for packages.
+`dbconfig-common` package have some samples in `/usr/share/doc/dbconfig-common/examples/` for mysql and postgresql debian configuration tasks for packages.
 
 ## Testing
 

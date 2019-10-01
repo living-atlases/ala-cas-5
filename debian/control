@@ -13,7 +13,7 @@ Vcs-Git: https://github.com/AtlasOfLivingAustralia/ala-cas-5.git
 
 Package: ala-cas-5
 Architecture: all
-Depends: ${misc:Depends}, openjdk-8-jdk, ca-certificates, mysql-server-5.7, python-mysqldb, dbconfig-mysql | dbconfig-no-thanks, mongodb-org-shell, mongodb-org-server, python-pip
+Depends: ${misc:Depends}, openjdk-8-jdk, ca-certificates, dbconfig-mysql | dbconfig-no-thanks
 Suggests: apache2 | nginx
 Description: The CAS-5 ALA module application
  This package contains the CAS-5 package from
